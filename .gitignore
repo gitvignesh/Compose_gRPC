@@ -1,15 +1,71 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Build output
+/build/
+*/build/
+.cxx/
+
+# Local configuration
 local.properties
+
+# Keystore files (DO NOT commit signing keys)
+*.jks
+*.keystore
+
+# Android Studio/IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Captures folder
+captures/
+
+# External native builds
+.externalNativeBuild/
+
+# Gradle
+.gradle/
+!gradle-wrapper.jar
+!**/gradle-wrapper.properties
+
+# Log files
+*.log
+
+# Crashlytics / Firebase
+crashlytics-build.properties
+fabric.properties
+
+# Jetpack Compose previews
+.compose-cache/
+
+# Kotlin specific
+*.kotlin_module
+
+# =========================
+# macOS specific ignores
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on network shares
+.Spotlight-V100
+.Trashes
+
+# macOS metadata files
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Vim swap files
+*.swp
+*.swo
